@@ -1,0 +1,29 @@
+class Phlex::TablerIcons::BabyCarriage < Phlex::TablerIcons::Icon
+  def initialize(options:)
+    @options = options
+  end
+
+  def view_template
+    svg(
+      xmlns: "http://www.w3.org/2000/svg",
+      width: @options[:width],
+      height: @options[:height],
+      viewbox: "0 0 24 24",
+      fill: "none",
+      stroke: "currentColor",
+      stroke_width: @options[:stroke_width],
+      stroke_linecap: "round",
+      stroke_linejoin: "round"
+    ) do |s|
+      s.path(d: "M8 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0")
+      s.path(d: "M18 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0")
+      s.path(
+        d:
+          "M2 5h2.5l1.632 4.897a6 6 0 0 0 5.693 4.103h2.675a5.5 5.5 0 0 0 0 -11h-.5v6"
+      )
+      s.path(d: "M6 9h14")
+      s.path(d: "M9 17l1 -3")
+      s.path(d: "M16 14l1 3")
+    end
+  end
+end
