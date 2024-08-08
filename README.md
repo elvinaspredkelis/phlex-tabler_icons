@@ -6,10 +6,22 @@ NOTE: Currently it only supports outlined icons. Will add filled icons soon.
 
 ## Instructions
 
-Add the gem to your application
+### Installation
+
+Add the gem to your application:
 
 ```bash
 bundle add phlex-tabler_icons
+```
+
+That's it!
+
+### Usage
+
+Simply render the desired icon in your views. The name of the icon is the same as in the Tabler Icons library, just in pascal case.
+
+```ruby
+render Phlex::TablerIcons::Rocket.new(classes: "h-8 w-8", stroke_width: 1.5)
 ```
 
 ## Configuration
