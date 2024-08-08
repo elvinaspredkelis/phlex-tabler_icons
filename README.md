@@ -1,5 +1,7 @@
 # Phlex Tabler Icons
 
+[![Gem Version](https://badge.fury.io/rb/phlex-tabler_icons.svg)](https://badge.fury.io/rb/phlex-tabler_icons)
+
 This is a port of [Tabler Icons](https://tabler.io/icons) to [Phlex](https://www.phlex.fun/)
 
 NOTE: Currently it only supports outlined icons. Will add filled icons soon.
