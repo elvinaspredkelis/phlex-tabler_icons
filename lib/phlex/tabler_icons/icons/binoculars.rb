@@ -1,17 +1,14 @@
 class Phlex::TablerIcons::Binoculars < Phlex::TablerIcons::Icon
-  def initialize(options:)
-    @options = options
-  end
-
   def view_template
     svg(
+      class: @class,
       xmlns: "http://www.w3.org/2000/svg",
-      width: @options[:width],
-      height: @options[:height],
+      width: @width,
+      height: @height,
       viewbox: "0 0 24 24",
       fill: "none",
       stroke: "currentColor",
-      stroke_width: @options[:stroke_width],
+      stroke_width: @stroke_width,
       stroke_linecap: "round",
       stroke_linejoin: "round"
     ) do |s|
@@ -32,12 +29,7 @@ class Phlex::TablerIcons::Binoculars < Phlex::TablerIcons::Icon
         d:
           "M4.239 14.813l2.84 -5.133c.189 -.31 .592 -.68 1.421 -.68c.828 0 1.5 .448 1.5 1v6"
       )
-      s.rect(
-        width: @options[:width],
-        height: @options[:height],
-        x: "10",
-        y: "12"
-      )
+      s.rect(width: "4", height: @height, x: "10", y: "12")
     end
   end
 end

@@ -3,13 +3,18 @@ require "phlex"
 module Phlex
   module TablerIcons
     class Icon < Phlex::SVG
-      attr_reader :stroke_width, :classes
+      attr_reader :classes, :height, :width, :stroke_width
 
-      def initialize(**options)
-      	@height = options[:height] || Phlex::TablerIcons.configuration.default_height
-        @width = options[:width] || Phlex::TablerIcons.configuration.default_width
-        @class = options[:class] || Phlex::TablerIcons.configuration.default_class
-        @stroke_width = options[:stroke_width] || Phlex::TablerIcons.configuration.default_stroke_width
+      def initialize(
+        classes: Phlex::TablerIcons.configuration.default_class,
+      	height: Phlex::TablerIcons.configuration.default_height,
+        width: Phlex::TablerIcons.configuration.default_width,
+        stroke_width: Phlex::TablerIcons.configuration.default_stroke_width
+      )
+        @class = classes
+      	@height = height
+        @width = width
+        @stroke_width = stroke_width
       end
     end
   end

@@ -6,20 +6,6 @@ require_relative 'tabler_icons/icon'
 module Phlex
 	module TablerIcons
 		# Loading all of the icons
-		# Dir.glob("lib/phlex/tabler_icons/icons/*.rb").each do |path|
-		# 	require path.gsub("lib/", "").gsub(".rb", "")
-		# end
-		#
-
-		# require_relative 'tabler_icons/icons/pizza'
-		# require_relative 'tabler_icons/icons/rocket'
-		# puts "Loading all of the icons..."
-		# Dir["lib/phlex/tabler_icons/icons/*.rb"].each { |file| require file.gsub("lib/", "") }
-		#
-		#
-
-		# Dir.glob("#{gem_directory}/lib/phlex/tabler_icons/icons/*.rb").map{|path| require_relative path.split("/phlex/").last }
-
 
 		class << self
 			def configuration
@@ -40,6 +26,7 @@ module Phlex
 			end
 		end
 
+		# Loading all of the icons
 		::Phlex::TablerIcons.load_icons!
 
 	end
