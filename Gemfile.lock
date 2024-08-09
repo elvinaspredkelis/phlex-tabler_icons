@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    phlex-tabler_icons (0.1.0)
+    phlex-tabler_icons (0.2.0)
       phlex (~> 1.6)
 
 GEM

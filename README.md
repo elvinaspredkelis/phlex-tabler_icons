@@ -6,6 +6,9 @@ This is a port of [Tabler Icons](https://tabler.io/icons) to [Phlex](https://www
 
 NOTE: Currently it only supports outlined icons. Will add filled icons soon.
 
+> [!NOTE]
+> Currently the gem only supports outlined icons. Filled icon variants will be introduced soon.
+
 ## Instructions
 
 ### Installation
@@ -23,7 +26,7 @@ That's it!
 Simply render the desired icon in your views. The name of the icon is the same as in the Tabler Icons library, just in pascal case.
 
 ```ruby
-render Phlex::TablerIcons::Rocket.new(classes: "h-8 w-8", stroke_width: 1.5)
+render Phlex::TablerIcons::Rocket.new(class: "h-8 w-8", stroke_width: 1.5)
 ```
 
 ## Configuration
