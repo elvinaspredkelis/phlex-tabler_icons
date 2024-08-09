@@ -4,8 +4,6 @@
 
 This is a port of [Tabler Icons](https://tabler.io/icons) to [Phlex](https://www.phlex.fun/)
 
-NOTE: Currently it only supports outlined icons. Will add filled icons soon.
-
 > [!NOTE]
 > Currently the gem only supports outlined icons. Filled icon variants will be introduced soon.
 
