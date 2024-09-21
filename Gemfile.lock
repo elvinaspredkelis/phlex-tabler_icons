@@ -2,7 +2,6 @@ PATH
   remote: .
   specs:
     phlex-tabler_icons (0.2.2)
-      phlex (~> 1.6)
 
 GEM
   remote: https://rubygems.org/
